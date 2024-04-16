@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Reading_Mode",
+    "version": "1.0",
+    "description": "A Chrome plugin that injects a few lines of CSS on the current tab.",
+    "action": {
+      "default_icon": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+      }
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "icons": {
+      "16": "icon_16.png",
+      "48": "icon_48.png",
+      "128": "icon_128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
